@@ -21,4 +21,4 @@ module core_datapath(input clk,reset,input [1:0] Result_src,input memwrite,input
   
   alu alu_inst(.alu_control(alu_control),.srca(srca),.srcb(srcb),.zero(zero),.result(aluresult));
   
-  result_mux result_mux_inst(.alu_result(result),.Result_src(resultsrc),.rd_data(readdata),.pc_plus4(pc_plus4),.wd3(write_data);
+  result_mux result_mux_inst(.alu_result(result),.Result_src(resultsrc),.rd_data(readdata),.pc_plus4(pc_plus4),.wd3(write_data));
